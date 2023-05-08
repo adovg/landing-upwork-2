@@ -1,0 +1,75 @@
+.about {
+  display: grid;
+ // grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(346px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px 20px;
+  margin-bottom: 110px;
+  .about__card {
+    display: flex;
+    flex-direction: column;
+    // margin: 0px 20px 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+    max-width: 346px;
+    max-height: 352px;
+    background: $textWhite;
+    border: 1px solid #efeff4;
+    border-radius: 8px;
+    .about__title {
+      padding: 99px 0 15px 40px;
+      font-family: "Metropolis";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      color: $textBlack;
+    }
+    .about__icon {
+      //padding-top: 80px;
+      background-color: $textWhite;
+
+      width: 77px;
+      height: 77px;
+      // box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
+       border-radius: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .about__subtitle {
+      padding-top: 40px;
+      padding-bottom: 15px;
+      font-family: "Metropolis";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 18px;
+      color: $textBlack;
+    }
+    .about__text {
+      padding-top: 16px;
+      padding-bottom: 93px;
+      color: $textCard;
+      font-family: "Metropolis";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &:hover {
+        background: $backCard;
+    }
+  }
+}
+
+
+.about__card:first-child {
+    padding-top: 0;
+    background: $textWhite;
+    border: none;
+    &:hover {
+        background: $textWhite;
+    }
+
+}

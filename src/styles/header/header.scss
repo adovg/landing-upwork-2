@@ -1,0 +1,119 @@
+.header__wrapper {
+  padding: 0 120px;
+  position: relative;
+  z-index: 0;
+  border-radius: 0px 0px 8px 8px;
+
+  @media (max-width: $breakpoint992) {
+    padding: 0 80px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    padding: 0 60px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    padding: 0 30px;
+  }
+}
+
+.header {
+    position: relative;
+    margin-bottom: 195px;
+    .header__img {
+        position: absolute;
+        left: 22vw;
+        bottom: -9vw;
+        z-index: -1;
+
+//         left: 0%;
+// right: 32.51%;
+// top: 57.3%;
+// bottom: -38.79%;
+
+// background: url(Image 1.png);
+// border-radius: 10.1186px;
+//transform: matrix(0.87, -0.5, 0.87, 0.5, 0, 0);
+    }
+  .header__title {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    margin-bottom: 15px;
+    color: $textBlack;
+  }
+  .header__text {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $textCard;
+  }
+
+}
+
+.header__links {
+    margin-top: 62px;
+    margin-bottom: 130px;
+    .header__btn {
+        font-family: "Metropolis";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 13px 24px;
+        background-color: $btnBg;
+        border-radius: 4px;
+        color: $textWhite;
+        margin-right: 45px;
+      }
+      .header__link {
+        font-family: "Metropolis";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: $btnBg;
+      }
+}
+
+
+
+.header__staistics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 280px;
+  .staistics__item {
+    margin-right: 80px;
+    margin-top: 25px;
+    .staistics__num {
+      font-family: "Metropolis";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 36px;
+      /* identical to box height */
+
+      text-align: center;
+      margin-bottom: 12px;
+
+      color: #232427;
+    }
+    .staistics__text {
+      font-family: "Metropolis";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      /* identical to box height */
+
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #5e5c6c;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.footer__wrapper {
+  width: 100%;
+  background: $textBlack;
+}
+.footer {
+  padding-top: 56px;
+  padding-bottom: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $textBlack;
+  color: $textWhite;
+    .footer__left{
+      max-width: 344px;
+    }
+    .footer__right{
+      max-width: 344px;      
+    }
+
+    .footer__form {
+      /* This bit sets up the horizontal layout */
+      display:flex;
+      flex-direction:row;
+      
+      /* I've used padding so you can see the edges of the elements. */
+      padding:1px;
+      position: relative;
+      margin-bottom: 10px;
+      margin-top: 12px;
+    }
+    
+    input {
+      /* Tell the input to use all the available space */
+      flex-grow:2;
+      /* And hide the input's outline, so the form looks like the outline */
+      border:none;
+      min-width: 300px;
+    min-height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: relative;
+    }
+    
+    /* remove the input focus blue box, it will be in the wrong place. */
+    input:focus {
+      outline: none;
+    }
+    
+    /* Add the focus effect to the form so it contains the button */
+    form:focus-within { 
+      outline: 1px solid blue 
+    }
+    
+    button {
+      /* Just a little styling to make it pretty */
+      border: none;
+      background: $btnBg;
+      border-radius: 4px;
+      color:white;
+      min-width: 40px;
+      max-height: 40px;
+      position: absolute;
+      left: 85%;
+      top: 15%;
+      bottom: 0;
+    }
+
+
+
+}
+
+.footer__about {
+  .footer__title{
+    font-family: 'Metropolis';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 18px;
+margin-bottom: 20px;
+  }
+}
+
+.footer__text {
+  font-family: 'Metropolis';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+
+}
+.footer__text-left {
+  margin-bottom: 90px;
+}
+
+.footer__copyright{
+  font-family: 'Metropolis';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+color: $textCopyright;
+}
+
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    .footer__social__item {
+      width: 50px;
+height: 50px;
+
+background: #5E5C6C;
+border-radius: 50%;
+align-items: center;
+display: flex;
+    align-items: center;
+    justify-content: center;
+      img {
+        fill: #FFFFFF;
+      }
+    }
+}
