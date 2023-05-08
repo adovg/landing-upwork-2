@@ -1,5 +1,8 @@
-.burger {
+.mobile {
   display: none;
+}
+.burger {
+  display: flex;
   cursor: pointer;
 }
 
@@ -11,9 +14,18 @@
   z-index: 5;
   margin-top: 15px;
   background: rgba(197, 197, 190, 0.5);
-  @media (max-width: $breakpoint480) {
-    left: 80vw;
-  }
+}
+
+.burger__btn.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger__btn.active .line:nth-child(1) {
+  transform: translateY(14px) rotate(45deg);
+}
+
+.burger__btn.active .line:nth-child(3) {
+  transform: translateY(-15px) rotate(-45deg);
 }
 
 .line {
@@ -49,8 +61,17 @@
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: $breakpoint480) {
+  .mobile {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
   .burger__btn {
     display: flex;
   }
-}
+} 

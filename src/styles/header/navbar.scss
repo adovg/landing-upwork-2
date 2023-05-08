@@ -7,6 +7,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 18px 20px;
+    @media (max-width: $breakpoint480) {
+      display: none;
+    }
 }
 
 .logo {
