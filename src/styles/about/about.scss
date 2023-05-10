@@ -1,6 +1,5 @@
 .about {
   display: grid;
- // grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: repeat(auto-fill, minmax(346px, 1fr));
   grid-template-rows: 1fr 1fr;
   grid-gap: 50px 20px;
@@ -8,7 +7,6 @@
   .about__card {
     display: flex;
     flex-direction: column;
-    // margin: 0px 20px 50px;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 60px;
@@ -18,7 +16,7 @@
     border: 1px solid #efeff4;
     border-radius: 8px;
     .about__title {
-      padding: 99px 0 15px 40px;
+      padding: 99px 0px 15px 0px;
       font-family: "Metropolis";
       font-style: normal;
       font-weight: 700;
@@ -26,16 +24,13 @@
       color: $textBlack;
     }
     .about__icon {
-      //padding-top: 80px;
       background-color: $textWhite;
-
       width: 77px;
       height: 77px;
-      // box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
-       border-radius: 100%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .about__subtitle {
       padding-top: 40px;
@@ -58,18 +53,16 @@
       line-height: 24px;
     }
     &:hover {
-        background: $backCard;
+      background: $backCard;
     }
   }
 }
 
-
 .about__card:first-child {
-    padding-top: 0;
+  padding-top: 0;
+  background: $textWhite;
+  border: none;
+  &:hover {
     background: $textWhite;
-    border: none;
-    &:hover {
-        background: $textWhite;
-    }
-
+  }
 }

@@ -1,13 +1,22 @@
-
 .header {
-    position: relative;
-    margin-bottom: 195px;
-    .header__img {
-        position: absolute;
-        left: 22vw;
-        bottom: -9vw;
-        z-index: -1;
+  position: relative;
+  margin-bottom: 195px;
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: $breakpoint480) {
+    margin-bottom: 60px;
+  }
+
+  .header__img {
+    position: absolute;
+    left: 22vw;
+    bottom: -9vw;
+    z-index: -1;
+    @media (max-width: $breakpoint480) {
+      display: none;
     }
+  }
   .header__title {
     font-family: "Metropolis";
     font-style: normal;
@@ -24,42 +33,55 @@
     font-size: 14px;
     line-height: 24px;
     color: $textCard;
+    @media (max-width: $breakpoint480) {
+      text-align: center;
+    }
   }
-
 }
 
 .header__links {
-    margin-top: 62px;
-    margin-bottom: 130px;
-    .header__btn {
-        font-family: "Metropolis";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 14px;
-        padding: 13px 24px;
-        background-color: $btnBg;
-        border-radius: 4px;
-        color: $textWhite;
-        margin-right: 45px;
-      }
-      .header__link {
-        font-family: "Metropolis";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 14px;
-        color: $btnBg;
-      }
-}
+  margin-top: 62px;
+  margin-bottom: 130px;
+  @media (max-width: $breakpoint480) {
+    margin-top: 32px;
+    margin-bottom: 80px;
+  }
 
+  .header__btn {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 13px 24px;
+    background-color: $btnBg;
+    border-radius: 4px;
+    color: $textWhite;
+    margin-right: 45px;
+  }
+  .header__link {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: $btnBg;
+  }
+}
 
 .header__staistics {
   display: flex;
   justify-content: space-between;
-  max-width: 280px;
+  gap: 80px;
+  flex-wrap: nowrap;
+  max-width: 400px;
+  @media (max-width: $breakpoint480) {
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
   .staistics__item {
-    margin-right: 80px;
     margin-top: 25px;
     .staistics__num {
       font-family: "Metropolis";
@@ -69,7 +91,7 @@
       line-height: 36px;
       text-align: center;
       margin-bottom: 12px;
-      color: #232427;
+      color: $textBlack;
     }
     .staistics__text {
       font-family: "Metropolis";
@@ -79,10 +101,7 @@
       line-height: 14px;
       text-align: center;
       text-transform: uppercase;
-      color: #5e5c6c;
+      color: $textMain;
     }
   }
 }
-
-
-
